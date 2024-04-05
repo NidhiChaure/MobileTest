@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-05T16:36:52 IST" name="Default suite" finished-at="2024-04-05T16:36:54 IST" duration-ms="1970">
+    <groups>
+    </groups>
+    <test started-at="2024-04-05T16:36:52 IST" name="Default test" finished-at="2024-04-05T16:36:54 IST" duration-ms="1970">
+      <class name="com.ajio.AjioApp">
+        <test-method signature="setup()[pri:0, instance:com.ajio.AjioApp@67c27493]" started-at="2024-04-05T16:36:53 IST" name="setup" finished-at="2024-04-05T16:36:54 IST" duration-ms="1724" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find 'adb' in ["/home/apmosys/Downloads/Android-sdk/Android/Sdk/platform-tools/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/emulator/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/cmdline-tools/latest/bin/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/tools/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/tools/bin/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/build-tools/33.0.0/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/build-tools/33.0.0/lib/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/build-tools/30.0.3/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/build-tools/30.0.3/lib/adb"]. Do you have Android Build Tools installed at '/home/apmosys/Downloads/Android-sdk/Android/Sdk'? 
+Host info: host: 'APMOSYSLT0491', ip: '172.1.4.230'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-101-generic', java.version: '11.0.22'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.indusind.indie.uat.MainActivity, appium:appPackage=com.indusind.indie.uat, appium:deviceName=384e8c05b28d, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:udid=384e8c05b28d}], desiredCapabilities=Capabilities {appActivity: com.indusind.indie.uat.Main..., appPackage: com.indusind.indie.uat, deviceName: 384e8c05b28d, fullReset: false, noReset: true, platformName: ANDROID, udid: 384e8c05b28d}}]
+Capabilities {appActivity: com.indusind.indie.uat.Main..., appPackage: com.indusind.indie.uat, deviceName: 384e8c05b28d, fullReset: false, noReset: true, platformName: ANDROID, udid: 384e8c05b28d}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find 'adb' in ["/home/apmosys/Downloads/Android-sdk/Android/Sdk/platform-tools/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/emulator/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/cmdline-tools/latest/bin/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/tools/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/tools/bin/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/build-tools/33.0.0/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/build-tools/33.0.0/lib/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/build-tools/30.0.3/adb","/home/apmosys/Downloads/Android-sdk/Android/Sdk/build-tools/30.0.3/lib/adb"]. Do you have Android Build Tools installed at '/home/apmosys/Downloads/Android-sdk/Android/Sdk'? 
+Host info: host: 'APMOSYSLT0491', ip: '172.1.4.230'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-101-generic', java.version: '11.0.22'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.indusind.indie.uat.MainActivity, appium:appPackage=com.indusind.indie.uat, appium:deviceName=384e8c05b28d, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:udid=384e8c05b28d}], desiredCapabilities=Capabilities {appActivity: com.indusind.indie.uat.Main..., appPackage: com.indusind.indie.uat, deviceName: 384e8c05b28d, fullReset: false, noReset: true, platformName: ANDROID, udid: 384e8c05b28d}}]
+Capabilities {appActivity: com.indusind.indie.uat.Main..., appPackage: com.indusind.indie.uat, deviceName: 384e8c05b28d, fullReset: false, noReset: true, platformName: ANDROID, udid: 384e8c05b28d}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:162)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:90)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:102)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+at com.ajio.AjioApp.setup(AjioApp.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- com.ajio.AjioApp -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
